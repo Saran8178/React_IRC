@@ -16,7 +16,7 @@ import { useAppContext } from './Appcontext';
 
 export default function Bed() {
   const [selectedItem, setSelectedItem] = useState('home');
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const { setSelectedProduct } = useAppContext();
  
 
