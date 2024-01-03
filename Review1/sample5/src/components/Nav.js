@@ -21,7 +21,8 @@ const Nav=()=>{
             <Link to="/login" className="same">LOGIN</Link>
           </li>
           <li>
-            <a href="#" className="same">ABOUT US</a>
+            <Link to="/login" className="same">ABOUT US</Link>
+           
           </li>
         </ul>
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import'../Assests/CSS/ReviewSignin.css'
 // import img3 from '../Assests/Image/Sofa.jpg'
-import final from '../Assests/Image/Furniture.jpg';
+// import final from '../Assests/Image/Furniture.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -51,7 +51,8 @@ const Signin = () => {
             <Link to="/login" className="same">LOGIN</Link>
           </li>
           <li>
-            <a href="#" className="same">ABOUT US</a>
+            <Link to="/login" className="same">ABOUT US</Link>
+           
           </li>
         </ul>
 

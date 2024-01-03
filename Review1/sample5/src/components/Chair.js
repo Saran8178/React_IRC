@@ -17,9 +17,9 @@ export default function Chair() {
   const [selectedItem, setSelectedItem] = useState('home');
   const navigate = useNavigate();
 
-  const handleSidebarSelect = (item) => {
-    setSelectedItem(item);
-  };
+  // const handleSidebarSelect = (item) => {
+  //   setSelectedItem(item);
+  // };
 
   const blackTheme = createTheme({
     palette: {
@@ -29,9 +29,9 @@ export default function Chair() {
     },
   });
 
-  const handleClick = () => {
-    navigate("/login");
-  };
+  // const handleClick = () => {
+  //   navigate("/login");
+  // };
 
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -193,7 +193,7 @@ export default function Chair() {
               variant="h6"
               noWrap
               component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, display: 'flex', justifyContent: 'center' }}
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' ,md: 'flex'}, justifyContent: 'center' }}
             >
              Bed
             </Typography>

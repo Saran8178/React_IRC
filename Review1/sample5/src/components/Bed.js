@@ -16,27 +16,27 @@ import { useAppContext } from './Appcontext';
 
 export default function Bed() {
   const [selectedItem, setSelectedItem] = useState('home');
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { setSelectedProduct } = useAppContext();
  
 
   
 
-  const handleSidebarSelect = (item) => {
-    setSelectedItem(item);
-  };
+  // const handleSidebarSelect = (item) => {
+  //   setSelectedItem(item);
+  // };
 
   const blackTheme = createTheme({
     palette: {
       primary: {
-        main: '#000', // Black color
+        main: '#000', 
       },
     },
   });
 
-  const handleClick = () => {
-    navigate("/login");
-  };
+  // const handleClick = () => {
+  //   navigate("/login");
+  // };
 
   const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -204,7 +204,7 @@ export default function Bed() {
               variant="h6"
               noWrap
               component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, display: 'flex', justifyContent: 'center' }}
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' ,md: 'flex'}, justifyContent: 'center' }}
             >
               Product
             </Typography>

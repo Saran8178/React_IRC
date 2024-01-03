@@ -1,14 +1,14 @@
-// Payment.js
+
 import React, { useState } from 'react';
 import '../Assests/CSS/Payment.css';
 import { Link } from 'react-router-dom';
-import Success from './Success';
+// import Success from './Success';
 const Payment = () => {
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Add your payment processing logic based on the selected payment method
+   
     console.log(`Payment submitted using ${paymentMethod === 'creditCard' ? 'Credit Card' : 'Cash on Delivery'}`);
   };
 

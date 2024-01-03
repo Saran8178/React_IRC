@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 import Home from "./components/ReviewHome";
 import Signin from "./components/ReviewSignin";
 import Login from './components/ReviewLogin';
@@ -9,7 +9,7 @@ import Sofa from "./components/Sofa";
 import Dinning from "./components/Dinning";
 import Bed from "./components/Bed";
 import Addashboard from "./components/AdDashboard";
-import Table from "./components/Details";
+// import Table from "./components/Details";
 import Details from "./components/Details";
 import Chair from "./components/Chair";
 import Common from "./components/Common";

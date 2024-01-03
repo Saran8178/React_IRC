@@ -31,17 +31,17 @@ export default function ProductTable() {
     setProducts(storedProducts);
   }, []);
 
-  const addProduct = (newProduct) => {
-    const updatedProducts = [...products, newProduct];
-    setProducts(updatedProducts);
-    localStorage.setItem('products', JSON.stringify(updatedProducts));
-  };
+  // const addProduct = (newProduct) => {
+  //   const updatedProducts = [...products, newProduct];
+  //   setProducts(updatedProducts);
+  //   localStorage.setItem('products', JSON.stringify(updatedProducts));
+  // };
 
-  const deleteProduct = (productId) => {
-    const updatedProducts = products.filter((product) => product.id !== productId);
-    setProducts(updatedProducts);
-    localStorage.setItem('products', JSON.stringify(updatedProducts));
-  };
+  // const deleteProduct = (productId) => {
+  //   const updatedProducts = products.filter((product) => product.id !== productId);
+  //   setProducts(updatedProducts);
+  //   localStorage.setItem('products', JSON.stringify(updatedProducts));
+  // };
 
   const updateProductPrice = (productId, newPrice) => {
     const updatedProducts = products.map((product) =>
@@ -51,9 +51,9 @@ export default function ProductTable() {
     localStorage.setItem('products', JSON.stringify(updatedProducts));
   };
 
-  const getTotalItems = () => {
-    return products.reduce((total, product) => total + product.quantity, 0);
-  };
+  // const getTotalItems = () => {
+  //   return products.reduce((total, product) => total + product.quantity, 0);
+  // };
 
   const CustomTableRow = ({ id, name, price, quantity }) => {
     const [newPrice, setNewPrice] = useState(price);
